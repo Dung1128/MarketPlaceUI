@@ -4,19 +4,25 @@ import { StackNavigator } from 'react-navigation';
 
 import MainTabNavigator from './MainTabNavigator';
 import registerForPushNotificationsAsync from '../api/registerForPushNotificationsAsync';
-
+import Login from '../screens/Login';
 const RootStackNavigator = StackNavigator(
   {
-    Main: {
-      screen: MainTabNavigator,
-    },
+    LogIn: {
+      screen: Login
+    }
+    // Main: {
+    //   screen: MainTabNavigator
+    // }
+  },
+  {
+    headerMode: 'none'
   },
   {
     navigationOptions: () => ({
       headerTitleStyle: {
-        fontWeight: 'normal',
-      },
-    }),
+        fontWeight: 'normal'
+      }
+    })
   }
 );
 
