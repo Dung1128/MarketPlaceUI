@@ -4,10 +4,10 @@ export default {
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    alignItems: 'center'
   },
   logo: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -19,9 +19,8 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: 25,
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    paddingHorizontal: 50
+    justifyContent: 'center',
+    paddingHorizontal: 40
   },
   forgotPass: {},
   viewInput: {
@@ -44,9 +43,7 @@ export default {
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 20,
-    marginVertical: 15
-  },
-  checkbox: {
-    backgroundColor: material.bgColor
+    marginVertical: 15,
+    marginBottom: 20
   }
 };
